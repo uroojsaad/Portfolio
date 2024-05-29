@@ -135,7 +135,7 @@ body {
 }
 /* ########################################################## */
 .homepage-background {
-  background-image: url("../images/Home.png");
+  background-image: url("/images/Home.png");
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Cover the entire area of the element */
