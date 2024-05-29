@@ -1,0 +1,105 @@
+// $(document).ready(function () {
+//   $("#contact-form").validate({
+//     rules: {
+//       name: {
+//         required: true,
+//         minlength: 2,
+//       },
+//       email: {
+//         required: true,
+//         email: true,
+//       },
+//       message: {
+//         required: true,
+//         minlength: 10,
+//       },
+//     },
+//     messages: {
+//       name: {
+//         required: "Please enter your name",
+//         minlength: "Name must be at least 2 characters long",
+//       },
+//       email: {
+//         required: "Please enter your email",
+//         email: "Please enter a valid email",
+//       },
+//       message: {
+//         required: "Please enter a message",
+//         minlength: "Message must be at least 10 characters long",
+//       },
+//     },
+//     submitHandler: function (form) {
+//       // Add your form submission logic here
+//       alert("Form submitted successfully!");
+//     },
+//   });
+// });
+
+//##############################################################//
+
+// emailjs.init("3pmEC93BP3i570BR4");
+
+// document
+//   .getElementById("contact-form")
+//   .addEventListener("submit", function (event) {
+//     event.preventDefault();
+//     var form = event.target;
+//     var data = new FormData(form);
+//     emailjs
+//       .sendForm(
+//         {
+//           PublicKey: "3pmEC93BP3i570BR4",
+//           PrivateKey: "BeHit_qXxdIB_eMlEAH-X",
+//         },
+//         "contact_form",
+//         data
+//       )
+//       .then(function (response) {
+//         console.log("Message sent successfully!", response);
+//       })
+//       .catch(function (error) {
+//         console.error("Error sending message:", error);
+//       });
+//   });
+// ========================================
+// how to add media queries in JS
+// ========================================
+
+function myFunction(widthSize) {
+  if (widthSize.matches) {
+    // If media query matches
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  } else {
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
+}
+
+const widthSize = window.matchMedia("(max-width: 780px)");
+// Call listener function at run time
+myFunction(widthSize);
+// Attach listener function on state changes
+widthSize.addListener(myFunction);
+kk;
