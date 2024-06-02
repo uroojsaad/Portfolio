@@ -181,7 +181,6 @@ p {
   /* font-family: -apple-system, sans-serif; */
   font-size: 1.2rem;
   font-weight: 700;
-  font-family: "Courier Prime", serif;
   letter-spacing: -0.24px;
   margin: 0;
   outline: none;
@@ -193,6 +192,9 @@ p {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+button.button {
+  font-family: "Courier Prime", serif;
 }
 
 .button:hover {
