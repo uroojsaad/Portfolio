@@ -97,14 +97,14 @@ body {
 /* Mobile (320-480 pixels) */
 @media (max-width: 480px) {
   .navbar {
-    flex-direction: column; /* Stack logo and nav vertically */
+    flex-direction: row; /* Stack logo and nav vertically */
     padding: 10px; /* Adjust padding */
   }
   .navbar-logo {
-    font-size: 20px; /* Adjust logo size */
+    font-size: 18px; /* Adjust logo size */
   }
   .navbar-nav {
-    flex-direction: column; /* Stack nav items vertically */
+    flex-direction: row; /* Stack nav items vertically */
     padding-right: 0; /* Remove padding */
   }
   .navbar-nav li {
