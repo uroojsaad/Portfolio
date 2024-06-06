@@ -147,9 +147,9 @@ body {
     flex-direction: row; /* Row layout */
     padding-right: 12%; /* Adjust padding */
   }
-  .navbar-nav li {
-    padding: 0 12px; /* Adjust padding between items */
-  }
+  /* .navbar-nav li {
+    padding: 0 12px; 
+  } */
   .navbar-nav a {
     font-size: 18px; /* Adjust font size */
   }
