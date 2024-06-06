@@ -62,7 +62,7 @@ body {
   width: 100%; /* Full width */
   z-index: 100; /* Make sure the navbar is above the background */
   background-color: #2c4e80; /* Transparent background */
-  /* color: yellow; /* White text for all elements in the navbar */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 .navbar-logo {
@@ -93,6 +93,88 @@ body {
   letter-spacing: 2px;
   font-weight: 500;
 }
+/* ###########################   MEDIA QUERY NAV BAR ##################### */
+/* Mobile (320-480 pixels) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column; /* Stack logo and nav vertically */
+    padding: 10px; /* Adjust padding */
+  }
+  .navbar-logo {
+    font-size: 20px; /* Adjust logo size */
+  }
+  .navbar-nav {
+    flex-direction: column; /* Stack nav items vertically */
+    padding-right: 0; /* Remove padding */
+  }
+  .navbar-nav li {
+    padding: 10px 0; /* Adjust padding between items */
+  }
+  .navbar-nav a {
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* Tablet (481-768 pixels) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px; /* Adjust padding */
+  }
+  .navbar-logo {
+    font-size: 22px; /* Adjust logo size */
+  }
+  .navbar-nav {
+    flex-direction: row; /* Row layout */
+    padding-right: 10%; /* Adjust padding */
+  }
+  .navbar-nav li {
+    padding: 0 10px; /* Adjust padding between items */
+  }
+  .navbar-nav a {
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* Laptop (769-1024 pixels) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 10px 30px; /* Adjust padding */
+  }
+  .navbar-logo {
+    font-size: 24px; /* Adjust logo size */
+  }
+  .navbar-nav {
+    flex-direction: row; /* Row layout */
+    padding-right: 12%; /* Adjust padding */
+  }
+  .navbar-nav li {
+    padding: 0 12px; /* Adjust padding between items */
+  }
+  .navbar-nav a {
+    font-size: 18px; /* Adjust font size */
+  }
+}
+
+/* Desktop (1025-1200 pixels) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .navbar {
+    padding: 10px 40px; /* Adjust padding */
+  }
+  .navbar-logo {
+    font-size: 26px; /* Adjust logo size */
+  }
+  .navbar-nav {
+    flex-direction: row; /* Row layout */
+    padding-right: 14%; /* Adjust padding */
+  }
+  .navbar-nav li {
+    padding: 0 15px; /* Adjust padding between items */
+  }
+  .navbar-nav a {
+    font-size: 18px; /* Adjust font size */
+  }
+}
+Ex
 
 /* ########################################################## */
 .homepage-background {
