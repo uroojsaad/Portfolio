@@ -11,7 +11,7 @@ html {
   background-color: #fefded;
 }
 body {
-  overflow-x: hidden; /* thapa style*/
+  overflow-x: hidden;
 }
 
 /* Styling the navigation bar */
@@ -22,7 +22,6 @@ body {
   --third: #fefded;
   --helper: #fc4100;
   --helper-tint: #f3f4ff;
-  /* --bg: rgb(249 249 255); */
   --gradient: linear-gradient(
     148deg,
     rgba(252, 65, 0, 1) 15%,
@@ -97,14 +96,13 @@ body {
 /* Mobile (320-480 pixels) */
 @media (max-width: 480px) {
   .navbar {
-    flex-direction: row; /* Stack logo and nav vertically */
     padding: 10px; /* Adjust padding */
   }
   .navbar-logo {
     font-size: 18px; /* Adjust logo size */
   }
   .navbar-nav {
-    flex-direction: row; /* Stack nav items vertically */
+    flex-direction: row;
     padding-right: 0; /* Remove padding */
   }
   .navbar-nav li {
@@ -124,7 +122,6 @@ body {
     font-size: 22px; /* Adjust logo size */
   }
   .navbar-nav {
-    flex-direction: row; /* Row layout */
     padding-right: 10%; /* Adjust padding */
   }
   .navbar-nav li {
@@ -144,7 +141,6 @@ body {
     font-size: 24px; /* Adjust logo size */
   }
   .navbar-nav {
-    flex-direction: row; /* Row layout */
     padding-right: 12%; /* Adjust padding */
   }
   /* .navbar-nav li {
@@ -164,7 +160,6 @@ body {
     font-size: 26px; /* Adjust logo size */
   }
   .navbar-nav {
-    flex-direction: row; /* Row layout */
     padding-right: 14%; /* Adjust padding */
   }
   .navbar-nav li {
@@ -174,8 +169,6 @@ body {
     font-size: 18px; /* Adjust font size */
   }
 }
-Ex
-
 /* ########################################################## */
 .homepage-background {
   background-image: url("images/Home.png");
@@ -254,13 +247,6 @@ button.button {
   align-items: center;
   justify-content: center;
   gap: 3%;
-}
-
-@media (min-width: 768px) {
-  .button {
-    font-size: 1.5rem;
-    padding: 0.75rem 2rem;
-  }
 }
 
 /* ===========================================
