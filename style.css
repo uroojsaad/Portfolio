@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-body,
-html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
   height: 100%; /* Ensure the minimum height is the full viewport */
   font-family: "Courier Prime", serif;
-  box-sizing: border-box; /* thapa style*/
-  /* font-size: 62.5%; */
-  font-size: 62.5%; /* thapa style*/
+  font-size: 62.5%;
   background-color: #fefded;
-}
-body {
   overflow-x: hidden;
 }
 
@@ -61,7 +60,7 @@ body {
   width: 100%; /* Full width */
   z-index: 100; /* Make sure the navbar is above the background */
   background-color: #2c4e80; /* Transparent background */
-  box-sizing: border-box; /* Include padding in the element's total width and height */
+  /* box-sizing: border-box;  */
 }
 
 .navbar-logo {
@@ -69,6 +68,9 @@ body {
   font-weight: bold; /* Bold font weight for logo */
   height: 4rem; /* thapa style*/
   padding-bottom: 0rem;
+}
+.logo-img {
+  height: 44px;
 }
 
 .navbar-nav {
@@ -173,6 +175,123 @@ button.button {
   justify-content: center;
   gap: 3%;
 }
+/* Media Queries */
+
+/* Mobile (320-480 pixels) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  .navbar-nav li {
+    padding: 10px 0;
+  }
+  .navbar-nav a {
+    font-size: 16px;
+  }
+  .homepage-background {
+    background-size: contain;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Tablet (481-768 pixels) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .navbar-logo {
+    font-size: 22px;
+  }
+  .navbar-nav {
+    padding-right: 10%;
+  }
+  .navbar-nav li {
+    padding: 0 10px;
+  }
+  .navbar-nav a {
+    font-size: 16px;
+  }
+  .homepage-background {
+    background-size: cover;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 5em;
+    letter-spacing: 3px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Laptop (769-1024 pixels) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 10px 30px;
+  }
+  .navbar-logo {
+    font-size: 24px;
+  }
+  .navbar-nav {
+    padding-right: 12%;
+  }
+  .navbar-nav a {
+    font-size: 18px;
+  }
+  .homepage-background {
+    background-size: cover;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 7em;
+    letter-spacing: 4px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Desktop (1025-1200 pixels) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .navbar {
+    padding: 10px 40px;
+  }
+  .navbar-logo {
+    font-size: 26px;
+  }
+  .navbar-nav {
+    padding-right: 14%;
+  }
+  .navbar-nav li {
+    padding: 0 15px;
+  }
+  .navbar-nav a {
+    font-size: 18px;
+  }
+  .homepage-background {
+    background-size: cover;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 9em;
+    letter-spacing: 5px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+Ex
 
 /* ===========================================
        Bio Data Section Start
