@@ -371,9 +371,9 @@ Media Queries Section
 
 /* Below 560px  */
 @media (max-width: 35em) {
-  .header {
+  /* .header {
     padding: 0 3.2rem;
-  }
+  } */
 
   .header .logo {
     width: 60%;
