@@ -211,9 +211,9 @@ Media Queries Section
   /* when we are in 980px we need to show the menu open icon */
   .mobile-navbar-btn {
     display: block;
-    /* z-index: 99999;
+    z-index: 99999;
     border: 3px solid #212529;
-    color: #212529; */
+    color: #212529;
   }
   .navbar-nav li {
     padding: 20px 0; /* Increased padding for larger touch targets */
@@ -247,7 +247,7 @@ Media Queries Section
   .navbar-nav {
     position: fixed;
     top: 0;
-    left: -100%;
+    right: -100%;
     flex-direction: column;
     background-color: #2c4e80;
     height: 100vh;
@@ -256,9 +256,13 @@ Media Queries Section
     justify-content: center;
     transition: left 0.3s ease-in-out;
   }
+  .navbar-nav a {
+    color: #fefded;
+    font-size: 3.2rem;
+  }
 
   .navbar-nav.active {
-    left: 0;
+    right: 0;
   }
 
   .navbar-lists {
