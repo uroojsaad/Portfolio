@@ -59,8 +59,7 @@ html {
   position: fixed; /* Fix position at the top of the page */
   width: 100%; /* Full width */
   z-index: 100; /* Make sure the navbar is above the background */
-  background-color: #2c4e80; /* Transparent background */
-  /* box-sizing: border-box;  */
+  background-color: #2c4e80;
 }
 
 .navbar-logo {
@@ -94,7 +93,6 @@ html {
   letter-spacing: 2px;
   font-weight: 500;
 }
-/* ###########################   MEDIA QUERY NAV BAR ##################### */
 
 /* ########################################################## */
 .homepage-background {
@@ -334,10 +332,6 @@ Media Queries Section
 
   .section-hero-data {
     align-items: center;
-  }
-
-  .section-hero-data .hero-top-data {
-    /* align-self: flex-start; */
   }
 
   .hero-heading {

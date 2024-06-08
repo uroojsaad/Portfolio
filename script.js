@@ -103,3 +103,15 @@ myFunction(widthSize);
 // Attach listener function on state changes
 widthSize.addListener(myFunction);
 kk;
+
+//################### menu  humburger  #########################//
+function toggleNavbar() {
+  const navbar = document.querySelector(".navbar-nav");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  navbar.classList.toggle("active");
+  menuIcon.style.display = menuIcon.style.display === "none" ? "block" : "none";
+  closeIcon.style.display =
+    closeIcon.style.display === "none" ? "block" : "none";
+}
