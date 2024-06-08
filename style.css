@@ -177,121 +177,218 @@ button.button {
 }
 /* Media Queries */
 
-/* Mobile (320-480 pixels) */
-@media (max-width: 480px) {
-  .navbar {
-    padding: 10px;
+/* ===========================================
+Media Queries Section
+======================================= */
+
+@media (max-width: 94em) {
+  .container {
+    max-width: 130rem;
   }
-  .navbar-nav {
+  .navbar-lists {
+    gap: 3.4rem;
+  }
+}
+
+/* for widht below 1200px  */
+@media (max-width: 75em) {
+  .container {
+    max-width: 110rem;
+  }
+  .navbar-lists {
+    gap: 3.4rem;
+  }
+}
+
+/* media queries less then 980px */
+@media (max-width: 980px) {
+  /* to make all the container with same padding  */
+  .container {
+    padding: 0 3.2rem;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+
+  /* when we are in 980px we need to show the menu open icon */
+  .mobile-navbar-btn {
+    display: block;
+    /* background-color: #212529; */
+    z-index: 99999;
+    border: 3px solid #212529;
+    color: #212529;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header .logo {
+    width: 40%;
+    /* height: 3.4rem; */
+  }
+
+  .navbar {
+    width: 100%;
+    height: 100vh;
+    background: #e7f5ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-lists {
     flex-direction: column;
-    padding-right: 0;
+    align-items: center;
   }
-  .navbar-nav li {
-    padding: 10px 0;
+
+  .navbar .navbar-lists .navbar-link:link,
+  .navbar .navbar-lists .navbar-link:visited {
+    color: #212529;
+    font-size: 3.2rem;
   }
-  .navbar-nav a {
-    font-size: 16px;
+
+  .active .navbar {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+    z-index: 9999;
   }
-  .homepage-background {
-    background-size: contain;
-    padding: 20px;
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+    display: block;
   }
-  h1 {
-    font-size: 3em;
-    letter-spacing: 2px;
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    display: none;
   }
-  p {
-    font-size: 14px;
+
+  /* hero section  */
+
+  .section-hero h1 {
+    line-height: 1.05;
+  }
+
+  /* section bidoata  */
+  .section-biodata .grid {
+    gap: 3rem;
+  }
+
+  /* section work  */
+  .section-work-data .common-numbers {
+    font-size: 3.2rem;
+  }
+
+  /* services section  */
+
+  .section-services .grid {
+    gap: 6rem;
+  }
+
+  .section-services .grid-three-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* resume section  */
+  .section-resume .grid-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .section-resume .grid-two-col img {
+    width: 50%;
+  }
+  .resume-img {
+    grid-row: 2;
+    transform: translateY(-2rem);
+  }
+
+  /* testimonial section  */
+  .section-testimonial .grid-three-col {
+    grid-template-columns: 2fr;
+  }
+
+  .section-footer .grid-four-col {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Tablet (481-768 pixels) */
-@media (min-width: 481px) and (max-width: 768px) {
-  .navbar {
-    padding: 10px 20px;
+/* Below 780px  */
+@media (max-width: 780px) {
+  .container {
+    max-width: 720px;
   }
-  .navbar-logo {
-    font-size: 22px;
+  /* hero section  */
+  .section-hero .grid-two-col {
+    grid-template-columns: 1fr;
   }
-  .navbar-nav {
-    padding-right: 10%;
+
+  .section-hero-data {
+    align-items: center;
   }
-  .navbar-nav li {
-    padding: 0 10px;
+
+  .section-hero-data .hero-top-data {
+    /* align-self: flex-start; */
   }
-  .navbar-nav a {
-    font-size: 16px;
+
+  .hero-heading {
+    text-align: center;
   }
-  .homepage-background {
-    background-size: cover;
-    padding: 20px;
+  .hero-para {
+    text-align: center;
+    margin-top: 2rem;
   }
-  h1 {
-    font-size: 5em;
-    letter-spacing: 3px;
+
+  .section-hero img {
+    width: 70%;
   }
-  p {
-    font-size: 16px;
+
+  /* work section  */
+  .section-portfolio .grid-three-col {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Laptop (769-1024 pixels) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .navbar {
-    padding: 10px 30px;
+/* Below 560px  */
+@media (max-width: 35em) {
+  .header {
+    padding: 0 3.2rem;
   }
-  .navbar-logo {
-    font-size: 24px;
-  }
-  .navbar-nav {
-    padding-right: 12%;
-  }
-  .navbar-nav a {
-    font-size: 18px;
-  }
-  .homepage-background {
-    background-size: cover;
-    padding: 20px;
-  }
-  h1 {
-    font-size: 7em;
-    letter-spacing: 4px;
-  }
-  p {
-    font-size: 18px;
-  }
-}
 
-/* Desktop (1025-1200 pixels) */
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .navbar {
-    padding: 10px 40px;
+  .header .logo {
+    width: 60%;
   }
-  .navbar-logo {
-    font-size: 26px;
+
+  /* secion .bio-data */
+
+  .section-biodata .grid-two-col {
+    grid-template-columns: 1fr;
   }
-  .navbar-nav {
-    padding-right: 14%;
+
+  .section-biodata .bio-image {
+    grid-row: 2;
+    margin-top: 3.2rem;
   }
-  .navbar-nav li {
-    padding: 0 15px;
+
+  /* work section  */
+  .section-work-data .grid-four-col {
+    grid-template-columns: 1fr 1fr;
   }
-  .navbar-nav a {
-    font-size: 18px;
-  }
-  .homepage-background {
-    background-size: cover;
-    padding: 20px;
-  }
-  h1 {
-    font-size: 9em;
-    letter-spacing: 5px;
-  }
-  p {
-    font-size: 18px;
+
+  /* services section  */
+  .section-services .grid-three-col {
+    grid-template-columns: 1fr;
   }
 }
-Ex
 
 /* ===========================================
        Bio Data Section Start
