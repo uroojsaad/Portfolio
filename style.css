@@ -93,6 +93,9 @@ html {
   letter-spacing: 2px;
   font-weight: 500;
 }
+.mobile-navbar-btn {
+  display: none;
+}
 /* ########################################################## */
 .homepage-background {
   background-image: url("images/Home.png");

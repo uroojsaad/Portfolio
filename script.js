@@ -102,7 +102,6 @@ const widthSize = window.matchMedia("(max-width: 780px)");
 myFunction(widthSize);
 // Attach listener function on state changes
 widthSize.addListener(myFunction);
-
 //################### menu  humburger  #########################//
 function toggleNavbar() {
   const navbar = document.querySelector(".navbar-nav");
