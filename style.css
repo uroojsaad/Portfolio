@@ -339,7 +339,7 @@ Media Queries Section
   .section-footer .grid-four-col {
     grid-template-columns: 1fr 1fr;
   }
-  .img-ovelay .overlay .common-heading {
+  .img-ovelay .overlay {
     font-size: 2.8rem;
   }
 }
