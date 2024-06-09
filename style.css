@@ -339,6 +339,9 @@ Media Queries Section
   .section-footer .grid-four-col {
     grid-template-columns: 1fr 1fr;
   }
+  .common-heading {
+    font-size: 2.8rem;
+  }
 }
 
 /* Below 780px  */
