@@ -250,7 +250,7 @@ Media Queries Section
   .navbar-nav {
     position: fixed;
     top: 56px;
-    right: -100%;
+    right: -4;
     flex-direction: column;
     background-color: #2c4e80;
     /* height: 100vh; */
