@@ -262,7 +262,7 @@ Media Queries Section
   }
 
   .navbar-nav.active {
-    right: 0;
+    right: -38;
   }
 
   .navbar-lists {
