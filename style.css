@@ -250,7 +250,7 @@ Media Queries Section
   .navbar-nav {
     position: fixed;
     top: 56px;
-    right: -4;
+    right: 0px;
     flex-direction: column;
     background-color: #2c4e80;
     /* height: 100vh; */
@@ -258,16 +258,16 @@ Media Queries Section
     align-items: center;
     justify-content: end;
     transition: left 0.3s ease-in-out;
+    display: none;
+    text-align: right;
+  }
+  .navbar-nav.active {
+    display: block;
   }
   .navbar-nav a {
     color: #fefded;
     font-size: 1.2rem;
   }
-
-  .navbar-nav.active {
-    right: -38;
-  }
-
   .navbar-lists {
     flex-direction: column;
     align-items: center;
