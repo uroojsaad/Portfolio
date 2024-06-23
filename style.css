@@ -32,6 +32,7 @@ html {
 .container {
   max-width: 140rem;
   margin: 0 auto;
+  padding: 3.2rem;
 }
 
 .grid {
@@ -131,10 +132,13 @@ p {
 .section-hero .homepage-background a p {
   color: #fefded;
 }
+.homepage-background a {
+  padding: 1rem;
+}
 .button {
   appearance: none;
   background-color: #fefded;
-  border-radius: 40em;
+  border-radius: 1em;
   border-style: none;
   box-shadow: #a9bada 0 -12px 6px inset;
   box-sizing: border-box;
@@ -351,7 +355,7 @@ Media Queries Section
   } */
 }
 
-/* Below 780px  */
+/* ############################### Below 780px ############################## */
 @media (max-width: 780px) {
   .container {
     max-width: 720px;
@@ -535,7 +539,7 @@ h3 {
       Section portfolio
 ======================================= */
 
-.section-portfolio p,
+/* .section-portfolio p, */
 .section-services p {
   max-width: 60rem;
 }
@@ -599,10 +603,10 @@ Services Section
   max-width: 60rem;
 }
 
-.section-services .grid {
+/* .section-services .grid {
   margin-top: 10rem;
   row-gap: 10rem;
-}
+} */
 .service-icon.md.hydrated {
   width: 3em;
   height: 3em;
